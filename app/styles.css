@@ -73,6 +73,23 @@ main{
         width: 100%;
         display: flex;
         justify-content: space-around;
+
+        #headers{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        input{
+            width: 25px;
+        }
+
+        th{
+            margin: 0 2rem
+        }
+
+        td{
+            margin: 0 2rem;
+        }
     }
 
     #table-header{
