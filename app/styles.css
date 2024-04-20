@@ -52,7 +52,7 @@ nav{
 
 main{
     padding-left: 5%;
-
+    width: 70%;
     header{
         display: flex;
         flex-direction: row;
@@ -65,6 +65,34 @@ main{
                 width: 25px;
                 height: auto;
             }
+        }
+    }
+
+    
+    table{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #table-header{
+        display: flex;
+        justify-content: flex-end;
+        input{
+            border: none;
+            background-color:#D9D9D9;
+            padding: .5rem 2rem;
+            border-radius: 5px;
+
+        }
+
+
+        button{
+            border: none;
+            background-color: #FE6B00;
+            border-radius: 5px;
+            padding: .5rem 2rem;
+            font-weight: 700;
         }
     }
 }
