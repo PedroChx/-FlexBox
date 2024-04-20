@@ -1,19 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav{
+    height: 100vh;
+    min-width: 20%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul{
+        margin-top: 7rem;
+    }
+    li{
+        list-style: none;
+        button{
+            border: none;
+            margin-bottom: 10px;
+            background-color: transparent;
+            font-weight: 700;
+            border-radius: 5px;
+            padding: 5px 1rem;
+        }
+        button:hover{
+            background-color:#D9D9D9 ;
+        }
+    }
+
+    #profile-container{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 4rem;
+            height: 4rem;
+        }
+
+        p{
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            margin-left: 1rem;
+        }
+    }
+}
+
 main{
-    display: flex;
+    padding-left: 5%;
+    width: 70%;
+    header{
+        display: flex;
+        flex-direction: row;
 
-}
+        button{
+            border:none;
+            background-color: transparent;
 
-#barra{
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-}
+            img{
+                width: 25px;
+                height: auto;
+            }
+        }
+    }
 
-#options{
-    display: flex;
-    flex-direction: column;
-}
+    
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 2rem;
+        input{
+            width: 50px;
+        }
 
-.buttons{
-    width: 150px;
+        th, td {
+            padding: 10px; /* Ajusta este valor según tu preferencia */
+            text-align: left; /* Ajusta la alineación del texto si es necesario */
+        }
+        th {
+            background-color: #f2f2f2; /* Color de fondo para las celdas de encabezado */
+        }
+
+
+    }
+
+    #action-buttons{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        button{
+            margin: .5rem;
+            border: none;
+        }
+
+        #guardar{
+            background-color: #FE6B00;
+            border-radius: 5px;
+            padding: .5rem 1rem;
+        }
+
+        #cancelar{
+            background-color: #D9D9D9;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+        }
+    }
+
+    #table-header{
+        display: flex;
+        justify-content: flex-end;
+        input{
+            border: none;
+            background-color:#D9D9D9;
+            padding: .5rem 2rem;
+            border-radius: 5px;
+            margin-right: 1rem;
+
+        }
+
+
+        button{
+            border: none;
+            background-color: #FE6B00;
+            border-radius: 5px;
+            padding: .5rem 2rem;
+            font-weight: 700;
+        }
+    }
 }

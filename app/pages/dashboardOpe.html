@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <script defer src="../js/dashboardOpe.js"></script>
     <link rel="stylesheet" href="../css/dashboardOpe.css">
+    <title>Document</title>
 </head>
 <body>
-    <main>
-        <div id="barra">
-            <div id="tarjeta">
-                <img src="" alt="">
-                <div id="data">
-                    <p>Name</p>
-                <p>user</p>
-                </div>
-            </div>
-            <div id="nav">
-                <div id="options">
-                    <button class="buttons" id="dashb">Dashboard</button>
-                    <button class="buttons" id="encarActivos">Encargo Activo</button>
-                    <button class="buttons" id="encargos">Encargos</button>
-                    <button class="buttons" id="mapa">Mapa de la ruta</button>
-                    <button class="buttons" id="acomodo">Acomodo de la carga</button>
-                </div>
+    <nav>
+        <div id="profile-container">
+            <img src="../image.png" alt="image_profile" id="profile">
+            <div id="profile-data">
+                <p>Tomas Alberto</p>
+                <p>Usuario</p>
             </div>
         </div>
-        <div>
-            <div>
+        <ul>
+            <li><button>Dashboard</button></li>
+            <li><button>Envíos</button></li>
+            <li><button>Mis productos</button></li>
+            <li><button>Cuenta</button></li>
+            <li><button>Cajas</button></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <button id="back-button"><img src="../back.png" alt="back button"></button>
+            <h2>Envíos</h2>
+        </header>
 
+        <div id="table-container">
+            <div id="table-header">
+                <input type="text" placeholder="Busca un envío">
+                <button>A</button>
             </div>
-            <div>
-                <div><h1>DASHBOARD</h1></div>
-                <div id="encargoActivo">
-                    <h3>Encargo Activo</h3>
-                    <div></div>
-                </div>
-                <div>
-                    <h2>Encargos</h2>
-                </div>
-            </div>
+            <table>
+                <tr id="headers">
+                    <th>#</th>
+                    <th>Operador</th>
+                    <th>Status</th>
+                    <th>Salida</th>
+                    <th>Llegada</th>
+                </tr>
+                <tr id="shipments">
+                    <td>1</td>
+                    <td>Juan Carlos</td>
+                    <td>Pendiente de recoleccción</td>
+                    <td>20/04/2024 12:00</td>
+                    <td>22/04/2024 16:00</td>
+                </tr>
+            </table>
         </div>
     </main>
 </body>
