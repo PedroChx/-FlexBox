@@ -1,0 +1,19 @@
+main{
+    display: flex;
+
+}
+
+#barra{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    width: 150px;
+}
