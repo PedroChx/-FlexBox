@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboardP.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div id="profile-container">
+            <img src="../image.png" alt="image_profile" id="profile">
+            <div id="profile-data">
+                <p>Juan Carlos</p>
+                <p>Operador</p>
+            </div>
+        </div>
+        <ul>
+            <li><button onclick="window.location.href = 'dashboardOpe.html'">Dashboard</button></li>
+            <li><button>Envíos</button></li>
+            <li><button>Mis productos</button></li>
+            <li><button>Cuenta</button></li>
+            <li><button onclick="window.location.href = '../index.html'">Cajas</button></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <button id="back-button" onclick="window.history.back()"><img src="../back.png" alt="back button"></button>
+            <h2>Envíos</h2>
+        </header>
+
+        <div id="table-container">
+            <div id="table-header">
+                <input type="text" placeholder="Busca un envío">
+                <button>A</button>
+            </div>
+            <table>
+                <tr id="headers">
+                    <th>#</th>
+                    <th>Unidad</th>
+                    <th>Status</th>
+                    <th>Salida</th>
+                    <th>Llegada</th>
+                </tr>
+                <tr id="shipments">
+                    <td>1</td>
+                    <td>AGR45FD3</td>
+                    <td>FINALIZADO</td>
+                    <td>20/04/2024 12:00</td>
+                    <td>22/04/2024 16:00</td>
+                </tr>
+                <tr id="shipments">
+                    <td>1</td>
+                    <td>AGR45FD3</td>
+                    <td class="active"><a href="./acomodo.html">EN ACTIVO</a></td>
+                    <td>20/04/2024 12:00</td>
+                    <td>22/04/2024 16:00</td>
+                </tr>
+                <tr id="shipments">
+                    <td>1</td>
+                    <td>AGR45FD3</td>
+                    <td>EN ESPERA</td>
+                    <td>20/04/2024 12:00</td>
+                    <td>22/04/2024 16:00</td>
+                </tr>
+                <tr id="shipments">
+                    <td>1</td>
+                    <td>AGR45FD3</td>
+                    <td>EN ESPERA</td>
+                    <td>20/04/2024 12:00</td>
+                    <td>22/04/2024 16:00</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
