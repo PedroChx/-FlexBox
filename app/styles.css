@@ -71,24 +71,42 @@ main{
     
     table{
         width: 100%;
-        display: flex;
-        justify-content: space-around;
-
-        #headers{
-            display: flex;
-            justify-content: space-around;
-        }
-
+        border-collapse: collapse;
+        margin-top: 2rem;
         input{
-            width: 25px;
+            width: 50px;
         }
 
-        th{
-            margin: 0 2rem
+        th, td {
+            padding: 10px; /* Ajusta este valor según tu preferencia */
+            text-align: left; /* Ajusta la alineación del texto si es necesario */
+        }
+        th {
+            background-color: #f2f2f2; /* Color de fondo para las celdas de encabezado */
         }
 
-        td{
-            margin: 0 2rem;
+
+    }
+
+    #action-buttons{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        button{
+            margin: .5rem;
+            border: none;
+        }
+
+        #guardar{
+            background-color: #FE6B00;
+            border-radius: 5px;
+            padding: .5rem 1rem;
+        }
+
+        #cancelar{
+            background-color: #D9D9D9;
+            padding: .5rem 1rem;
+            border-radius: 5px;
         }
     }
 
@@ -100,6 +118,7 @@ main{
             background-color:#D9D9D9;
             padding: .5rem 2rem;
             border-radius: 5px;
+            margin-right: 1rem;
 
         }
 
